@@ -23,6 +23,8 @@
             flush();
 
             sleep(1);
+
+            unset($this);
         }
 
         public function __destruct() {
