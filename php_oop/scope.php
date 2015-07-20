@@ -1,6 +1,10 @@
 <?php
     
     class Baddie {
+
+        // available anywhere and access with the 'scope resolution operator ::'
+        public static $level = 30;
+
         // private but available also within Sub-Classes (Boss)
         protected $evilness = 10;
 
@@ -32,4 +36,7 @@
     echo "<br>";
     echo "<br>";
     echo $jorge -> getBaddieEvilness();
+    echo "<br>";
+    echo "<br>";
+    echo Baddie::$level;
 ?>
